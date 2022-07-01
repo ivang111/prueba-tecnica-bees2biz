@@ -15,11 +15,11 @@ function CardStudent({id, name, industry, interests, city }) {
   
   const onClick = ()=>{
     dispatch(deleteStuden(id))
-    swal("Student deleted")
+    swal({
+      title: deleteStudent
+    })
   }
-  useEffect(() => {
-    dispatch(getAllStudents());
-  }, [dispatch]);
+
   
   return (
     <div className='containerCardStudent'>

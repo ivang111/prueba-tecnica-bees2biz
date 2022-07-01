@@ -1,19 +1,20 @@
 import axios from "axios"
 import { GET_ALL_STUDENT,GET_STUDENT_DETAIL,PUT_STUDENT_DETAIL,CREATE_STUDENT,DELETE_STUDENT,ALPHABETICAL_SORT,FILTER_INTEREST } from "./actionTypes.js"
 
-export  function  getAllStudents() {
-    return async function (dispatch){
-        await axios.get(`https://retoolapi.dev/cSZH8I/data`)
-        .then((r) => {
-            return dispatch({ 
-                type: GET_ALL_STUDENT, 
-                payload: r.data 
-            });
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-    };
+
+export function getAllStudents() {
+  return async function (dispatch) {
+    try {
+      let response = await axios.get(`https://retoolapi.dev/cSZH8I/data`);
+      // console.log(response.data)
+      return dispatch({
+        type: GET_ALL_STUDENT,
+        payload: response.data,
+      });
+    } catch (error) {
+      return error;
+    }
+  };
 }
 export  function  getStudentById(id) {
     //console.log("ACTIONID:",id)

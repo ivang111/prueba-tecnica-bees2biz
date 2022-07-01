@@ -11,19 +11,21 @@ function AllStudent() {
     
     const dispatch = useDispatch();
     
+    console.log(dispatch)
+    const allStudent = useSelector((state) => state.allStudent);
+        
     useEffect(() => {
       dispatch(getAllStudents());
     }, [dispatch]);
-    
-    const allStudent = useSelector((state) => state.allStudent);
+
     
     const [order, setOrder] = useState("");
     const [page, setPage] = useState(1);
-    const [setstudentpage, setsetstudentpage] = useState(4)
+    const [studentpage, setstudentpage] = useState(4)
     
-    const PostPagOne = page * setstudentpage;
-    const firstsetstudentpage = PostPagOne - setstudentpage;
-    const PostByPage = allStudent.slice(firstsetstudentpage, PostPagOne);
+    const PostPagOne = page * studentpage;
+    const firststudentpage = PostPagOne - studentpage;
+    const PostByPage = allStudent.slice(firststudentpage, PostPagOne);
     const maxPages = Math.ceil(allStudent.length / 4);
 
     function pageNum(e) {

@@ -2,6 +2,7 @@ import { GET_ALL_STUDENT,GET_STUDENT_DETAIL,PUT_STUDENT_DETAIL,CREATE_STUDENT,DE
 
 const initialState = {
   allStudent: [],
+  student: [],
   studentById: [],
   
   
@@ -14,6 +15,7 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         allStudent: action.payload,
+        student: action.payload,
       };
     case GET_STUDENT_DETAIL:
       return {

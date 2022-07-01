@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div className='containerDataHome'>
             <div className='containerDataHomeLeft'>
-                <h1>Search</h1>
+                <h1>Panel de control</h1>
                 <button className={userOptionState===1?"buttonAll deploys":"buttonAll doNotDeploys"}onClick={() => toggleTab(1)}>Todos los Estudiantes</button>
                
                 <button className={userOptionState===2?"buttonAll deploys":"buttonAll doNotDeploys"}onClick={() => toggleTab(2)}>Nuevo Estudiante</button>
