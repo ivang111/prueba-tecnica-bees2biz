@@ -152,6 +152,7 @@ function StudentUpdate(props) {
             To Register
           </button>
         </form>
+        <h1>Actualiza tus datos</h1>
       </div>
     </div>
   );

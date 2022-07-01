@@ -17,7 +17,7 @@
 }
 .containerDataHomeLeft{
     width: 400px;
-    height: 700px;
+    height: 570px;
     margin-left: 100px;
     background: rgba(255, 255, 255, 0.48);
     border-radius: 30px;
@@ -46,6 +46,11 @@
 }
 .inactive_deploy{
     display: none;
+}
+.studentImg{
+    margin-top: 5rem;
+    width: auto;
+    height: 300px
 }
 
 

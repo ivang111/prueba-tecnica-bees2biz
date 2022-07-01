@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Home.css"
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {  useState } from "react";
 import AllStudent from './AllStudent/AllStudent';
 import NewSatudent from './NewSatudent/NewSatudent';
+import student from "../../Img/student.png"
 
 function Home() {
 
@@ -25,6 +25,7 @@ function Home() {
                 <button className={userOptionState===1?"buttonAll deploys":"buttonAll doNotDeploys"}onClick={() => toggleTab(1)}>Todos los Estudiantes</button>
                
                 <button className={userOptionState===2?"buttonAll deploys":"buttonAll doNotDeploys"}onClick={() => toggleTab(2)}>Nuevo Estudiante</button>
+                <img className='studentImg' src={student} alt="student"/>
             </div>
             <div className={userOptionState===1?"active_deploy":"inactive_deploy"}>
                 <AllStudent/>
