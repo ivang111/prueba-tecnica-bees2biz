@@ -1,0 +1,70 @@
+.containerCardStudent{
+    width: 630px;
+    height: 140px;
+    display: flex;
+    margin: 1rem;
+    background: rgba(255, 255, 255, 0.48);
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.149);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.leftCardStudent{
+    width: 60px;
+    height: 140px;
+    background-color: var(--main-first-color);
+    border-radius: 25px 0 0 25px;
+}
+.subTitle{
+    transform: rotate(-90deg);
+    margin-top: 4.5rem;
+    margin-left: 0.5rem;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.rightCardStudent{
+    width: 570px;
+    height: 140px;
+    display: flex;
+    justify-content: left;
+}
+.textrightCardStudent{
+    width: 430px;
+    height: 140px;
+    text-align: left;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    /* background-color: blue; */
+}
+.textCardName{
+    color: var(--main-first-color);
+    font-weight: 800;
+    font-size: 30px;
+}
+.textCardText{
+    color: var(--main-extra-color);
+    font-weight: 800;
+    margin-left: 3rem;
+}
+.textCardSpan{
+    color: black;
+}
+.textCityCard{
+    margin-left:1rem;
+    margin-top: 0.5rem;
+    font-size: 17px;
+    color: black;
+}
+
+.buttonrightCardStudent{
+    width: 130px;
+    height: 130px;
+    padding-top: 0.5rem;
+    /* background-color: blueviolet; */
+}
+.buttonCard{
+    margin-top: 1rem;
+}
